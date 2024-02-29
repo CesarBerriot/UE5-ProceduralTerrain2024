@@ -53,7 +53,10 @@ void ATerrainGenerator::Generate()
 		}
 		Cubes.Add(Line);
 	}
-	GenerateWhiteNoiseInChunks();
+	if(UseChunks)
+		GenerateWhiteNoiseInChunks();
+	else
+		GenerateWhiteNoise();
 }
 
 void ATerrainGenerator::Clear()

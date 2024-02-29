@@ -18,6 +18,7 @@ private:
 	UPROPERTY(EditAnywhere) UMaterial * CubeMaterial;
 	UPROPERTY(EditAnywhere) float MinHeight = 0;
 	UPROPERTY(EditAnywhere) float MaxHeight = 1000;
+	UPROPERTY(EditAnywhere) bool UseChunks = true;
 	UPROPERTY(VisibleAnywhere) class UProceduralMeshComponent * ProceduralMeshComponent;
 	TArray<TArray<AActor*>> Cubes;
 public:
